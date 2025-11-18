@@ -1,0 +1,44 @@
+@import "../../styles/global.scss";
+
+.button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 6px;
+  padding: 0 12px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+
+  &__aqua {
+    background-color: $color-aqua;  
+  }
+
+  &__s {
+    height: $size-s;  
+  }
+
+  &__m {
+    height: $size-m;  
+  }
+
+  &__l {
+    height: $size-l;  
+  }
+  
+  &:hover {
+    background-color: $color-aqua-hovered;
+  }
+
+  &:active {
+    background-color: $color-aqua-active;
+  }
+}
