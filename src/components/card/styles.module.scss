@@ -1,0 +1,25 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+  width: 220px;
+}
+
+.wrapper p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.price[class] {
+  margin: 5px 0px 5px 0px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.image img {
+  width: 220px;
+  height: 300px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
