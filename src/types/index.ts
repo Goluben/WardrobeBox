@@ -1,5 +1,3 @@
-import { Url } from "next/dist/shared/lib/router/router";
-
 export enum Color {
   Aqua = "aqua",
   BlueAqua = "blue"
