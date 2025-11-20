@@ -2,9 +2,8 @@
 
 import { useCallback } from "react";
 
-import Button from "../src/components/my-button";
-import Card from "../src/components/card";
-import { Color, Product } from "../src/types";
+import Listing from "@/src/components/listing";
+import { data } from "@/src/constants";
 
 export default function App() {
   const handleClick = useCallback(
@@ -12,17 +11,9 @@ export default function App() {
     []
   );
 
-  const item: Product = {
-    id: "123",
-    brand: "NewBalance",
-    model: "2002 NR",
-    price: "135",
-    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
-  };
-
   return (
     <div>
-      <Card item={item} onClick={handleClick}></Card>
+      <Listing list={data} onClick={handleClick} />
     </div>
   );
 }

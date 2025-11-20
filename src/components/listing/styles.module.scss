@@ -1,0 +1,9 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 15px;
+
+}

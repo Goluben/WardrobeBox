@@ -21,5 +21,10 @@
   height: 300px;
   border-radius: 7px;
   cursor: pointer;
+  
+  &:hover {
+    transition-duration: 0.2s;
+    transform: scale(1.02);
+  }
 }
 
