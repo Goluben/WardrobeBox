@@ -1,0 +1,67 @@
+export const data = [{
+    id: "1",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "2",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "3",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "4",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "5",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "6",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "7",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "8",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "9",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "10",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  },{
+    id: "11",
+    brand: "NewBalance",
+    model: "2002 NR",
+    price: "135",
+    imgSrc: "https://a.lmcdn.ru/product/R/T/RTLADV243701_24945579_3_v1.jpg",
+  }];

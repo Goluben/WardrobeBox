@@ -1,10 +1,10 @@
 "use client";
 
-import { useCallback } from "react";
+import { Suspense, useCallback } from "react";
 
 import Listing from "@/src/components/listing";
-import { data } from "@/src/constants";
-import MyButton from "@/src/components/my-button";
+import { useProducts } from "@/src/hooks";
+import { Product } from "@/src/types";
 
 export default function App() {
   const handleClick = useCallback(
@@ -12,9 +12,13 @@ export default function App() {
     []
   );
 
+  const products = useProducts();
+  if (!products) return "loading";
+  console.log(products);
+
   return (
     <div>
-      <Listing list={data} onClick={handleClick} />
+      <Listing list={products} onClick={handleClick} />
     </div>
   );
 }
