@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.wrapper[class]{
+  background-color: $color-blue;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: $max-width;
+  align-content: center;
+}
+
+.name[class] {
+  font-size: 28px;
+  margin-left: 10px;
+  color:white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: default;
+}
