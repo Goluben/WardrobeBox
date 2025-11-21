@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  height: 200px;
+  background-color: $color-blue;
+  margin-top: 15px;
+}
+
+.content {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+}
