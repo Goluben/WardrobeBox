@@ -8,9 +8,8 @@ export function useProducts() {
   const [products, setProducts] = useState<Product[]>();
 
   const fetchProducts = async () => {
-    const data = await fetch(API.PRODUCTS);
-    const p = await data.json();
-    setProducts(p as Product[]);
+    const data = await fetch(API.PRODUCTS).then((res) => res.json());
+    setProducts(data as Product[]);
   }
 
   useEffect(() => {fetchProducts()}, []);

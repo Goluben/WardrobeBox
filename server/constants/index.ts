@@ -1,3 +1,11 @@
+export const DB_CONF = {
+  USER: "postgres",
+  HOST: "localhost",
+  DATABASE: "db",
+  PASSWORD: "1",
+  PORT: 5432
+};
+
 export const data = [{
     id: "1",
     brand: "NewBalance",
