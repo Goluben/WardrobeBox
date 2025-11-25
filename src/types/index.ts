@@ -1,15 +1,15 @@
 export enum Color {
   Aqua = "aqua",
-  BlueAqua = "blue"
+  BlueAqua = "blue",
 }
 
-export type Size = "s" | "m" | "l"; 
+export type Size = "s" | "m" | "l";
 
 export interface Product {
   id: string;
   brand: string;
   model: string;
   price: string;
-  imgSrc: string;
-  productParams?: {[key:string]: string};
+  img_src: string;
+  product_params?: { [key: string]: string };
 }
