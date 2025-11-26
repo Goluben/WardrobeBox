@@ -15,7 +15,7 @@ function Card({ item, onClick }: Props) {
   return (
     <div className={cn(styles.wrapper)}>
       <div className={cn(styles.image)} onClick={() => onClick(item.id)}>
-        <img src={item.imgSrc} alt="" />
+        <img src={item.img_src} alt="" />
       </div>
       <p className={styles.price}>{item.price}$</p>
       <p>{item.brand}</p>
