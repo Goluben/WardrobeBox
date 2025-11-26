@@ -12,10 +12,8 @@ router
   })
   .post(async (req, res) => {
     const product = req.body;
-    console.log(product);
     const result = await dao.addProduct(product);
-    console.log(result);
-    res.json(result);
+    res.json(result.rows[0]);
   });
 
 router
@@ -34,6 +32,12 @@ router
     } else {
       res.send(false);
     }
+  })
+  .put(async (req, res) => {
+    const id = req.params.id;
+    const uProduct = req.body;
+    const result = await dao.updateProduct(id, uProduct);
+    res.json(result.rows[0]);
   });
 
 export default router;
