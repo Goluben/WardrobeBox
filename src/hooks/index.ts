@@ -1,19 +1,31 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 import { API } from "../constants";
 import { Product } from "../types";
-
+import { fetchProducts, fetchProduct } from "../redux/actions";
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
+import { getProducts, getProduct } from "../redux/selectors";
 
 export function useProducts() {
-  const [products, setProducts] = useState<Product[]>();
+  const dispatch = useAppDispatch();
 
-  const fetchProducts = async () => {
-    const data = await fetch(API.PRODUCTS).then((res) => res.json());
-    setProducts(data as Product[]);
-  }
+  const products = useAppSelector(getProducts);
 
-  useEffect(() => {fetchProducts()}, []);
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
 
   return products;
+}
 
+export function useProduct(id: string) {
+  const dispatch = useAppDispatch();
+
+  const product = useAppSelector(getProduct);
+
+  useEffect(() => {
+    dispatch(fetchProduct(id));
+  }, []);
+
+  return product;
 }
