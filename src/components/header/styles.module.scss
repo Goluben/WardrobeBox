@@ -15,7 +15,9 @@
 .content {
   width: 100%;
   max-width: $max-width;
-  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .name[class] {
@@ -23,5 +25,5 @@
   margin-left: 10px;
   color:white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  cursor: default;
+  cursor: pointer;
 }

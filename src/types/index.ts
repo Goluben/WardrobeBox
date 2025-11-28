@@ -13,3 +13,9 @@ export interface Product {
   img_src: string;
   product_params?: { [key: string]: string };
 }
+
+export type State = {
+  products: Product[];
+  product: Product | null;
+  isProductsPending: boolean;
+};
