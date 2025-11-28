@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useCallback } from "react";
+import { useCallback } from "react";
 
 import Listing from "@/src/components/listing";
 import { useProducts } from "@/src/hooks";
